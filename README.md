@@ -1,6 +1,12 @@
 # LBViewFrame
+使用时只需要导入
+
+#import "UIView+LBFrame.h"
+
 1：对于编程的时候方便的使用相对位置来进行coding
+
 例如：
+
     UIButton *testBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 40, 40)];
     testBtn.center = CGPointMake(self.view.center.x, self.view.center.y + 100);
     testBtn.layer.cornerRadius = testBtn.frame.size.height / 2;
